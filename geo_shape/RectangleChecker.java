@@ -6,8 +6,9 @@ import static app.DriverUtils.assertEqual;
 import java.awt.Color;
 
 
-public class RectangleChecker
+public class RectangleChecker implements IShapeChecker
 {
+    @Override
     public boolean quickCheck()
     {
         boolean result  = true;

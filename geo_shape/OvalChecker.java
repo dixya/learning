@@ -5,7 +5,7 @@ import static app.DriverUtils.*;
 import java.awt.Color;
 
 
-public class OvalChecker
+public class OvalChecker implements IShapeChecker
 {
     public boolean quickCheck()
     {

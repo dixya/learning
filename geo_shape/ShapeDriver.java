@@ -3,7 +3,10 @@ package cp120.assignments.geo_shape;
 import static app.DriverUtils.printf;
 
 import java.awt.Color;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
+import java.util.function.Consumer;
 
 public class ShapeDriver {
 
@@ -23,36 +26,27 @@ public class ShapeDriver {
     }
 
     public static void main(String[] args) {
-        String status;
-
-        if (new PointChecker().quickCheck()) {
-            status = "PASS";
-        } else {
-            status = "FAIL";
-        }
+        /*
+        String status = new PointChecker().quickCheck() ? "PASS" : "FAIL";
         printf("GeoPoint check: %s%n", status);
 
-        if (new LineChecker().quickCheck()) {
-            status = "PASS";
-        } else {
-            status = "FAIL";
-        }
+        status = new LineChecker().quickCheck() ? "PASS" : "FAIL";
         printf("GeoLine check: %s%n", status);
 
-        if (new RectangleChecker().quickCheck()) {
-            status = "PASS";
-        } else {
-            status = "FAIL";
-        }
+        status = new RectangleChecker().quickCheck() ? "PASS" : "FAIL";
         printf("GeoRectangle check: %s%n", status);
 
-        if (new OvalChecker().quickCheck()) {
-            status = "PASS";
-        } else {
-            status = "FAIL";
-        }
+        status = new OvalChecker().quickCheck() ? "PASS" : "FAIL";
         printf("GeoOval check: %s%n", status);
+        */
+        List<IShapeChecker> shapeCheckers = new ArrayList<>();
+        shapeCheckers.add(new PointChecker());
+        shapeCheckers.add(new LineChecker());
+        shapeCheckers.add(new RectangleChecker());
+        shapeCheckers.add(new OvalChecker());
 
+        shapeCheckers.forEach(sc -> System.out.println(sc.getName() + " check: " + (sc.quickCheck() ? "PASS" : "FAIL")));
+          
         new ShapeDriver().execute();
     }
 

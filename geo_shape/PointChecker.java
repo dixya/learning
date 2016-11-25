@@ -3,7 +3,7 @@ package cp120.assignments.geo_shape;
 import static app.DriverUtils.*;
 
 
-public class PointChecker
+public class PointChecker implements IShapeChecker
 {
     public boolean quickCheck()
     {
@@ -25,5 +25,10 @@ public class PointChecker
         result &= assertEqual( yco1, point.getYco(), EPSILON );
         
         return result;
+    }
+    
+    @Override
+    public String getName() {
+        return "GeoPoint";
     }
 }

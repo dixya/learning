@@ -5,7 +5,7 @@ import java.awt.Color;
 
 import static app.DriverUtils.*;
 
-public class LineChecker
+public class LineChecker implements IShapeChecker
 {
     public boolean quickCheck()
     {
