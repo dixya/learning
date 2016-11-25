@@ -1,0 +1,23 @@
+GeoPoint check: PASS
+GeoLine check: PASS
+GeoRectangle check: PASS
+GeoOval check: PASS
+origin=(1.1,2.2),color=#ba1a69,width=5.5,height=6.6
+origin=(105.5,300.5),color=#683509,end=(256.0,256.0)
+origin=(400.0,128.2),color=#55a8f7,width=5.5,height=6.6
+A=36.3,P=24.2
+origin=(64.5,300.0),color=#b50227,width=5.5,height=6.6
+origin=(200.0,8.8),color=#f629f0,width=5.5,height=6.6
+A=36.3,P=24.2
+origin=(256.0,256.0),color=#8df2e8,end=(5.5,5.5)
+origin=(400.2,256.0),color=#ba1a69,width=5.5,height=6.6
+origin=(276.2,200.7),color=#683509,width=5.5,height=6.6
+A=36.3,P=24.2
+Drawing oval: origin=(1.1,2.2),color=#ba1a69,width=5.5,height=6.6
+Drawing line: origin=(105.5,300.5),color=#683509,end=(256.0,256.0)
+Drawing rectangle: origin=(400.0,128.2),color=#55a8f7,width=5.5,height=6.6
+Drawing oval: origin=(64.5,300.0),color=#b50227,width=5.5,height=6.6
+Drawing rectangle: origin=(200.0,8.8),color=#f629f0,width=5.5,height=6.6
+Drawing line: origin=(256.0,256.0),color=#8df2e8,end=(5.5,5.5)
+Drawing oval: origin=(400.2,256.0),color=#ba1a69,width=5.5,height=6.6
+Drawing rectangle: origin=(276.2,200.7),color=#683509,width=5.5,height=6.6
