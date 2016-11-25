@@ -1,4 +1,3 @@
-
 package cp120.assignments.geo_shape;
 
 import java.awt.Color;
@@ -9,29 +8,32 @@ import java.awt.Point;
  *
  * @author dixya
  */
-public  class GeoShape {
+public class GeoShape {
+
     Color color;
     GeoPoint origin;
 
     /**
      *
      */
-    public static final GeoPoint DEFAULT_ORIGIN  = new GeoPoint( 0f, 0f );
+    public static final GeoPoint DEFAULT_ORIGIN = new GeoPoint(0f, 0f);
     public static final Color DEFAULT_COLOR = Color.BLUE;
-    public GeoShape( GeoPoint origin, Color color ){                
-                this.origin = origin;
-                this.color=color;
+
+    public GeoShape(GeoPoint origin, Color color) {
+        this.origin = origin;
+        this.color = color;
 
     }
-    public  void draw(Graphics2D gtx){
-        
+
+    public void draw(Graphics2D gtx) {
+
     }
 
     public GeoPoint getOrigin() {
         origin.getXco();
         origin.getYco();
         return origin;
-			//This is the getter for the encapsulated origin.
+        //This is the getter for the encapsulated origin.
     }
 
     public Point getIntOrigin() {

@@ -1,4 +1,3 @@
-
 package cp120.assignments.geo_shape;
 
 import java.awt.Point;
@@ -12,16 +11,16 @@ public class GeoPoint {
     float x0, y0;
 
     GeoPoint(float xco, float yco) {
-        this.x0=xco;
-        this.y0=yco;
+        this.x0 = xco;
+        this.y0 = yco;
     }
 
     public float getXco() {
         return x0;//getter for x
     }
 
-   public void setXco(float xco) {
-       this.x0 = xco;      //setter for the encapsulated x-coordinate.
+    public void setXco(float xco) {
+        this.x0 = xco;      //setter for the encapsulated x-coordinate.
     }
 
     public float getYco() {
@@ -45,11 +44,9 @@ public class GeoPoint {
 
     }
 
-    
     @Override
     public String toString() {
         return "(" + x0 + "," + y0 + ")";
     }
 
-   
 }
